@@ -1,0 +1,17 @@
+.container #lunch-menu{
+	display: inline-block;
+	width: 80%;
+}
+.container .message.success, .container .message.error {
+	border: 1px solid white;
+	border-radius: 4px;
+	padding: 10px;
+}
+.container .message.success {
+	color: darkgreen;
+	border-color: darkgreen;
+}
+.container .message.error {
+	color: darkred;
+	border-color: darkred;
+}
