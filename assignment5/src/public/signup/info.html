@@ -1,0 +1,30 @@
+<div class="signup-wrapper container">
+	<form name="info" class="col-lg-6" novalidate="" ng-if="firstName">
+		<div class="form-group">
+			<label for="firstName">First Name</label>
+			<input type="text" class="form-control" placeholder="First Name" ng-model="firstName" readonly="">
+		</div>
+		<div class="form-group">
+			<label for="lastName">Last Name</label>
+			<input type="text" class="form-control" placeholder="Last Name" ng-model="lastName" readonly="">
+		</div>
+		<div class="form-group">
+			<label for="email">Email</label> 
+			<input type="email" class="form-control" placeholder="Email" ng-model="email" readonly="">
+			
+		</div>
+		<div class="form-group">
+			<label for="phone">Phone</label>
+			<input type="phone" class="form-control" placeholder="Phone" ng-model="phone" readonly="">
+			
+		</div>
+	</form>
+	<div class="col-lg-6 text-center" ng-if="dishCode">
+		<img ng-src="{{imageUrl}}" class="image image-responsive">
+		<div>Favorite Dish:</div>
+		 <div>{{dishCode}}</div>
+	</div>
+	<div ng-if="!firstName">
+		<span>Not Signed Up Yet. <a ui-sref="public.signup">Sign up Now!</a></span>
+	</div>
+</div>

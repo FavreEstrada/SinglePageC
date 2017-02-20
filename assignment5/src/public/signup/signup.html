@@ -1,0 +1,28 @@
+<div class="signup-wrapper container">
+	<form name="signUp" class="col-lg-6" novalidate="">
+		<div class="form-group">
+			<label for="firstName">First Name</label>
+			<input type="text" class="form-control" placeholder="First Name" ng-model="firstName" required="">
+		</div>
+		<div class="form-group">
+			<label for="lastName">Last Name</label>
+			<input type="text" class="form-control" placeholder="Last Name" ng-model="lastName" required="">
+		</div>
+		<div class="form-group">
+			<label for="email">Email</label> 
+			<input type="email" class="form-control" placeholder="Email" ng-model="email" required="">
+			
+		</div>
+		<div class="form-group">
+			<label for="phone">Phone</label>
+			<input type="phone" class="form-control" placeholder="Phone" ng-model="phone" required="">
+			
+		</div>
+		<div class="form-group">
+			<label for="phone">Favorite Dish Number</label>
+			<input type="text" class="form-control" ng-model="dishCode" placeholder="dish">
+			
+		</div>
+		<button type="submit" class="btn btn-default" ng-disabled="signUp.$invalid" ng-click="createUser()">Submit</button>
+	</form>
+</div>
